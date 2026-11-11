@@ -75,7 +75,7 @@ export function mountMain(){
     var setPaused = function (p) {
       if (!toggle) return;
       toggle.setAttribute('aria-pressed', p ? 'true' : 'false');
-      toggle.setAttribute('aria-label', p ? "播放背景影片" : "暫停背景影片");
+      toggle.setAttribute('aria-label', p ? "Phát video nền" : "Tạm dừng video nền");
     };
     if (reduce) {
       setPaused(true);
@@ -250,7 +250,7 @@ export function mountMain(){
       tvEl.bbTuneTimer = setTimeout(function () {
         tvEl.setAttribute('data-ch', next);
         screen.setAttribute('href', r.url);
-        screen.setAttribute('aria-label', "查看 Instagram Reels: " + r.caption);
+        screen.setAttribute('aria-label', "Xem Instagram Reels: " + r.caption);
         vid.pause();
         vid.setAttribute('poster', r.poster);
         vid.setAttribute('data-src', r.video);
@@ -382,7 +382,7 @@ export function mountMain(){
         loop: many, rewind: !many, speed: reduce ? 0 : 520, grabCursor: true, watchSlidesProgress: true,
         autoplay: reduce ? false : { delay: parseInt(wrapEl.getAttribute('data-delay') || '3000', 10), disableOnInteraction: false, pauseOnMouseEnter: true },
         navigation: { prevEl: wrapEl.querySelector('[data-bb-prev]'), nextEl: wrapEl.querySelector('[data-bb-next]') },
-        a11y: { prevSlideMessage: "上一張診所環境照片", nextSlideMessage: "下一張診所環境照片" }
+        a11y: { prevSlideMessage: "Ảnh không gian phòng khám trước", nextSlideMessage: "Ảnh không gian phòng khám tiếp theo" }
       });
     }
   };
