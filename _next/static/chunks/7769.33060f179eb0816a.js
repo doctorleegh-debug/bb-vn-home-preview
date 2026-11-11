@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[7769],{97769:(e,n,r)=>{r.r(n),r.d(n,{UnknownConvertedNodeComponent:()=>o});var d=r(95155);r(12115);var o=e=>{let{data:n}=e;return(0,d.jsxs)("div",{children:["Unknown converted Slate node: ",(0,d.jsx)("strong",{children:n?.nodeType})]})}}}]);
